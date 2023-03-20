@@ -1,0 +1,27 @@
+// atom ================================================ start
+.home_button_frame{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #498428;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    >svg{
+        width: 30px;
+        height: 30px;
+        color: rgba(255,255,255,0.7);
+    }
+}
+
+// atom ================================================ done
