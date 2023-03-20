@@ -1,9 +1,10 @@
 import React from 'react'
 
-const index = () => {
+const Home_button = () => {
     return (
         <div className='home_button_frame'>
             <svg
+                className='svg'
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16">
                 <path
@@ -13,4 +14,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Home_button
