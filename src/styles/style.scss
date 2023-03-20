@@ -1,3 +1,22 @@
+// font==================================================start
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+   .notosanskr * { 
+    font-family: 'Noto Sans KR', sans-serif;
+   }
+// font==================================================done
+
+body {
+    margin: 0;
+    padding: 0;
+  }
 // atom ================================================ start
 .home_button_frame{
     box-sizing: border-box;
@@ -17,10 +36,10 @@
     gap: 10px;
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    .svg{
-        width: 30px;
-        height: 30px;
-        stroke: rgba(255,255,255,1);
+    .home_icon{
+        width: 25px;
+        height: 25px;
+        color: rgba(255,255,255,1);
     }
 }
 .header_logo_frame{
@@ -44,11 +63,10 @@
         height: auto; /* 36px */
         white-space: pre;
         position: relative;
-        font-weight: bold;
-        font-style: normal;
-        font-family: "Abhaya Libre", "Abhaya Libre Placeholder", serif;
+        font-weight:normal;
+        font-family: 'NanumBarunGothic';
         color: #498428;
-        font-size: 30px;
+        font-size: 35px;
         letter-spacing: 5px;
         line-height: 1.2;
     }
@@ -58,10 +76,11 @@
         height: auto; /* 20px */ 
         white-space: pre; 
         position: relative;
-        font-family: "Inter", sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: normal;
         color: #000000;
         font-size: 16px;
-        letter-spacing: 0px;
+        letter-spacing: 2px;
         line-height: 1.2;
     }
 }
@@ -75,7 +94,7 @@
 .top_section_frame{
     flex-shrink: 0;
     // width: 1px;
-    flex: 1 0 0px;
+    flex: 1;
     // height: 1px;
     display: flex;
     flex-direction: column;
@@ -164,11 +183,117 @@
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
+.right_bottom_frame{
+    flex-shrink: 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    border-radius: 0px 0px 0px 0px;
+    .text_frame{
+        flex-shrink: 0;
+        width: min-content; /* 427px */
+        height: min-content; /* 240px */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 0;
+        border-radius: 0px 0px 0px 0px;
+        :nth-child(1){
+            flex-shrink: 0;
+            width: auto; /* 147px */
+            height: auto; /* 120px */
+            white-space: pre;
+            position: relative;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Abhaya Libre", "Abhaya Libre Placeholder", serif;
+            color: #498428;
+            font-size: 100px;
+            letter-spacing: 0px;
+            line-height: 1.2;
+        }
+        :nth-child(2){
+            flex-shrink: 0;
+            width: auto; /* 427px */
+            height: auto; /* 120px */
+            white-space: pre;
+            position: relative;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Abhaya Libre", "Abhaya Libre Placeholder", serif;
+            color: #498428;
+            font-size: 100px;
+            letter-spacing: 0px;
+            line-height: 1.2;
+        }
+    }
+}
+.right_top_frame{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 40px 40px 40px;
+    overflow: hidden;
+    position: relative;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0;
+    border-radius: 0px 0px 0px 0px;
+    .round{
+        box-sizing: border-box;
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        display: block;
+        background-color: rgba(255, 123, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        border-radius: 100px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
 // atom ================================================ done
 // molecules =========================================== start
+.right_block_frame{
+    flex-shrink: 0;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    z-index: 2;
+    gap: 0;
+    border-radius: 0px 0px 0px 0px;
+}
 .left_block_frame{
     flex-shrink: 0;
-    flex: 1 0 0px;
+    flex: 1;
     // width: 1px;
     height: 100%;
     display: flex;
@@ -180,6 +305,7 @@
     padding: 0px 0px 0px 0px;
     align-content: center;
     flex-wrap: nowrap;
+    z-index: 2;
     gap: 0;
     border-radius: 0px 0px 0px 0px;
 }
@@ -189,8 +315,8 @@
     right: 0px;
     box-sizing: border-box;
     flex-shrink: 0;
-    width: 1790px;
-    height: 70px;
+    width: 100%;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -200,17 +326,16 @@
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.1);
     overflow: hidden;
-    z-index: 1px;
+    z-index: 10;
     align-content: center;
     flex-wrap: nowrap;
     position: absolute;
     border-radius: 0px 0px 0px 0px;
 }
 .center_block_frame{
-    top: 50px;
-    left: 248px;
-    right: 272px;
-    bottom: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     box-sizing: border-box;
     flex-shrink: 0;
     width: 600px;
@@ -269,3 +394,41 @@
     border-radius: 0px 0px 0px 0px;
 }
 // organsim ============================================done
+// templates ==========================================start
+.home_board_frame{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 125px 40px 80px 40px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-radius: 0px 0px 0px 0px;
+}
+// templates ==========================================done
+// pages ==============================================start
+.main_page_frame{
+    width: 100%;
+    height: min-content; /* 3888px */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000000;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    position: absolute;
+    border-radius: 0px 0px 0px 0px;
+}
+// pages ==============================================done

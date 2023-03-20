@@ -5,6 +5,8 @@ const Main_info_container = () => {
   return (
     <div className='main_info_frame'>
       <Left_block/>
+      <Center_block/>
+      <Right_block/>
     </div>
   )
 }
