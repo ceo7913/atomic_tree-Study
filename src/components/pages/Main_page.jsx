@@ -1,11 +1,13 @@
 import React from 'react'
-import Home_borad from '../templates/Home_borad'
-import Header from '../UI/molecules/Header'
+import { Home_board, Skill_board } from '../templates'
+
+
 
 const Main_page = () => {
   return (
     <div className='main_page_frame'>
-        <Home_borad/>
+        <Home_board/>
+        <Skill_board/>
     </div>
   )
 }

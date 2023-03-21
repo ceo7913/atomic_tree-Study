@@ -1,7 +1,7 @@
 import React from 'react'
 import Main_info_container from '../UI/organsim/Main_info_container'
 
-const Home_borad = () => {
+const Home_board = () => {
   return (
     <div className='home_board_frame'>
         <Main_info_container/>
@@ -9,4 +9,4 @@ const Home_borad = () => {
   )
 }
 
-export default Home_borad
+export default Home_board
