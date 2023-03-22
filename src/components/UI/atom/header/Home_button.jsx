@@ -6,7 +6,7 @@ const Home_button = () => {
         <div className='home_button_frame'>
           <FontAwesomeIcon icon={faHome} className="home_icon"/>
         </div>
-    ) 
+    )  
 }
  
 export default Home_button
