@@ -1,5 +1,6 @@
 import React from 'react'
-import { Home_board, Skill_board } from '../templates'
+import { Home_board, Skill_board, Faq_board, Project_board } from '../templates'
+
 
 
 
@@ -8,6 +9,8 @@ const Main_page = () => {
     <div className='main_page_frame'>
         <Home_board/>
         <Skill_board/>
+        <Project_board/>
+        <Faq_board/>
     </div>
   )
 }

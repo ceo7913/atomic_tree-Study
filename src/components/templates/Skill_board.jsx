@@ -1,5 +1,5 @@
 import React from 'react'
-import Info_text from '../UI/atom/Skill_board/Info_text'
+import Info_text from '../UI/atom/skill_board/Info_text'
 import Stack_wrap from '../UI/molecules/skill_board/Stack_wrap'
 
 const Skill_board = () => {
