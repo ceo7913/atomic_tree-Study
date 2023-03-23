@@ -15,6 +15,18 @@ body {
   padding: 0;
 }
 
+.pluss_button_frame {
+  width: -moz-min-content;
+  width: min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.pluss_button_frame .pluss_button {
+  color: rgba(0, 0, 0, 0.7);
+  width: 32px;
+  height: 32px;
+}
+
 .view_all_button_frame {
   box-sizing: border-box;
   flex-shrink: 0;
@@ -469,6 +481,72 @@ body {
   position: relative;
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq_list_frame {
+  flex-shrink: 0;
+  width: -moz-min-content;
+  width: min-content; /* 800px */
+  height: -moz-min-content;
+  height: min-content; /* 318px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  border-radius: 0px 0px 0px 0px;
+}
+.faq_list_frame .faq_box_frame {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 800px;
+  height: -moz-min-content;
+  height: min-content; /* 72px */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  overflow: hidden;
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  border-radius: 25px;
+  border: 1px solid #498428;
+}
+.faq_list_frame .faq_box_frame .faq_box {
+  cursor: pointer;
+  flex-shrink: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  overflow: hidden;
+  height: auto; /* 30px */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  position: relative;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Manrope", "Manrope Placeholder", sans-serif;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 1.4;
+  text-align: left;
+}
+.faq_list_frame .faq_box_frame .faq_box .faq_content {
+  display: none;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .project_ball_list_frame {
