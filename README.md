@@ -12,6 +12,7 @@ https://fe-developers.kakaoent.com/2022/220505-how-page-part-use-atomic-design-s
  ┃ ┃ ┗ 📜README.md
  ┃ ┣ 📂templates
  ┃ ┃ ┣ 📜Faq_board.jsx
+ ┃ ┃ ┣ 📜Footer.jsx
  ┃ ┃ ┣ 📜Home_board.jsx
  ┃ ┃ ┣ 📜index.jsx
  ┃ ┃ ┣ 📜Project_board.jsx
@@ -19,6 +20,8 @@ https://fe-developers.kakaoent.com/2022/220505-how-page-part-use-atomic-design-s
  ┃ ┃ ┗ 📜Skill_board.jsx
  ┃ ┗ 📂UI
  ┃ ┃ ┣ 📂atom
+ ┃ ┃ ┃ ┣ 📂footer
+ ┃ ┃ ┃ ┃ ┗ 📜Link_box.jsx
  ┃ ┃ ┃ ┣ 📂header
  ┃ ┃ ┃ ┃ ┣ 📜Home_button.jsx
  ┃ ┃ ┃ ┃ ┣ 📜index.jsx
@@ -40,8 +43,15 @@ https://fe-developers.kakaoent.com/2022/220505-how-page-part-use-atomic-design-s
  ┃ ┃ ┃ ┣ 📂skill_board
  ┃ ┃ ┃ ┃ ┣ 📜Info_text.jsx
  ┃ ┃ ┃ ┃ ┗ 📜Stack.jsx
+ ┃ ┃ ┃ ┣ 📜Pluss_button.jsx
  ┃ ┃ ┃ ┗ 📜README.md
  ┃ ┃ ┣ 📂molecules
+ ┃ ┃ ┃ ┣ 📂faq_board
+ ┃ ┃ ┃ ┃ ┗ 📜Faq_list.jsx
+ ┃ ┃ ┃ ┣ 📂footer
+ ┃ ┃ ┃ ┃ ┣ 📜Footer_info.jsx
+ ┃ ┃ ┃ ┃ ┣ 📜index.jsx
+ ┃ ┃ ┃ ┃ ┗ 📜Link_box_list.jsx
  ┃ ┃ ┃ ┣ 📂main-info-container
  ┃ ┃ ┃ ┃ ┣ 📜Center_block.jsx
  ┃ ┃ ┃ ┃ ┣ 📜index.jsx
