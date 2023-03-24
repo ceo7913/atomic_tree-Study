@@ -18,6 +18,46 @@ body {
     padding: 0;
   }
 // atom ================================================ start
+.link_box_frame{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: min-content; /* 168px */
+    height: min-content; /* 46px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-radius: 10px;
+    :nth-child(1){
+        width: 30px;
+        height: 30px;
+        stroke: rgba(0,0,0,0.7);
+        stroke-width: 30px;
+        color: rgba(0,0,0,0.5);
+    }
+    :nth-child(2){
+        color: rgba(0,0,0,0.7);
+        flex-shrink: 0;
+        width: auto; /* 96px */
+        height: auto; /* 20px */
+        white-space: pre;
+        position: relative;
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Manrope", sans-serif;
+        font-size: 24px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        line-height: 1.4;
+    }
+}
 .pluss_button_frame{
     width: min-content;
     height: min-content;
@@ -673,6 +713,52 @@ body {
         border: 1px solid rgba(0, 0, 0, 0.1);
     }
 }
+.link_box_list{
+    flex-shrink: 0;
+    width: 100%;
+    height: min-content; /* 46px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    border-radius: 0px 0px 0px 0px;
+}
+.footer_info_frame{
+    flex-shrink: 0;
+    width: min-content; /* 390px */
+    height: min-content; /* 20px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    border-radius: 0px 0px 0px 0px;
+    :nth-child(-n+3){
+        flex-shrink: 0;
+        width: auto; /* 201px */
+        height: auto; /* 20px */
+        white-space: pre;
+        position: relative;
+        font-weight: 600;
+        font-style: normal;
+        font-family: "Manrope", sans-serif;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 1.4;
+    }
+}
 // molecules =========================================== done
 // organsim ============================================start
 .main_info_frame{
@@ -778,6 +864,34 @@ body {
     flex-wrap: nowrap;
     gap: 80px;
     border-radius: 0px 0px 0px 0px;
+}
+.footer_frame{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    height: min-content; /* 358px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px 100px 30px;
+    background-color: #ffffff;
+    overflow: visible;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    border-radius: 0px 0px 0px 0px;
+    .line{
+        flex-shrink: 0;
+        width: 510px;
+        height: 1px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+        border-radius: 0px 0px 0px 0px;
+    }
 }
 // templates ==========================================done
 // pages ==============================================start
