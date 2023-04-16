@@ -6,7 +6,7 @@ https://fe-developers.kakaoent.com/2022/220505-how-page-part-use-atomic-design-s
 
 - 협업에 용이한 프론트엔드 파일구조에 대한 이해
 
-## src 파일 구조 
+## src 파일 구조
 
 ```
 📦src
